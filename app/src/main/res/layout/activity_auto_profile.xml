@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backgroundblue"
+    android:layout_height="match_parent"
+    tools:context=".Autoshopowner.AutoProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/autofaceimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/face" />
+
+    <Button
+        android:id="@+id/autobackButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/right"
+        android:drawableLeft="@drawable/ic_baseline_arrow_circle_left_30"
+        android:paddingLeft="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/autiSelectImege"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autofaceimage"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="13dp"
+        android:layout_toStartOf="@id/logoutprofile"
+        android:background="@drawable/round_button_transparent"
+        android:text="select image"
+        android:textColor="@color/red" />
+
+
+    <Button
+        android:id="@+id/logoutprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/autofaceimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_transparent"
+        android:text="@string/logout"
+        android:textColor="@color/black" />
+
+    <EditText
+
+        android:id="@+id/autoProfileName"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/autofaceimage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/round_button"
+        android:hint="@string/enter_full_name"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+
+        android:id="@+id/autoProfileemail"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/autoProfileName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:hint="@string/e_mail"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+
+        android:id="@+id/autoProfilemobileno"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/autoProfileemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:hint="@string/mobile_number"
+        android:inputType="number"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+
+        android:id="@+id/autoProfilpassword"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/autoProfilemobileno"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/autoProfilpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_button_green"
+        android:text="@string/save"
+        android:textColor="@color/white"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>
